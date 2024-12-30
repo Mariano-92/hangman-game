@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+}
+
+#hangman {
+    font-family: 'Courier New', monospace;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#restartButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#restartButton:hover {
+    background-color: #218838;
+}
+
+#word, #wrongGuesses {
+    font-weight: bold;
+}
+
+#attemptsLeft {
+    color: red;
+    font-size: 18px;
+}
