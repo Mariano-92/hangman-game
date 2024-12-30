@@ -1,3 +1,9 @@
+import { generateBlanks } from "./blank-spaces.js";
+import { displayHangman } from "./drawing.js";
+import { handleGuess } from "./handle-player.js";
+import { restartGame, showRestartButton, updateAttemptsLeft } from "./restart-counter-game.js"
+import { words, secretWord } from "./word-generator.js";
+
 const playGame = (word) => {
     let progress = generateBlanks(word);
     let wrongGuesses = [];
@@ -67,3 +73,5 @@ const playGame = (word) => {
     console.log('Current progress: ', progress.join(' '));
     console.log('Wrong guesses so far: ', wrongGuesses.join(', '));
 };
+
+export { playGame };
